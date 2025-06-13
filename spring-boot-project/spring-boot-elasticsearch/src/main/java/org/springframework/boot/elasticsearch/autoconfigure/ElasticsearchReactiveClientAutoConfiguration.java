@@ -35,7 +35,7 @@ import org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchCl
  * reactive client.
  *
  * @author Brian Clozel
- * @since 3.0.0
+ * @since 4.0.0
  */
 @AutoConfiguration(after = ElasticsearchClientAutoConfiguration.class)
 @ConditionalOnBean(RestClient.class)
