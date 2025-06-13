@@ -83,12 +83,12 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.mockito.Mockito.mock;
 
 /**
- * Tests for {@link ReactiveCloudFoundryActuatorAutoConfiguration}.
+ * Tests for {@link CloudFoundryReactiveActuatorAutoConfiguration}.
  *
  * @author Madhura Bhave
  * @author Moritz Halbritter
  */
-class ReactiveCloudFoundryActuatorAutoConfigurationTests {
+class CloudFoundryReactiveActuatorAutoConfigurationTests {
 
 	private static final String V2_JSON = ApiVersion.V2.getProducedMimeType().toString();
 
@@ -103,7 +103,7 @@ class ReactiveCloudFoundryActuatorAutoConfigurationTests {
 						EndpointAutoConfiguration.class, WebEndpointAutoConfiguration.class,
 						HealthContributorAutoConfiguration.class, HealthEndpointAutoConfiguration.class,
 						InfoContributorAutoConfiguration.class, InfoEndpointAutoConfiguration.class,
-						ProjectInfoAutoConfiguration.class, ReactiveCloudFoundryActuatorAutoConfiguration.class))
+						ProjectInfoAutoConfiguration.class, CloudFoundryReactiveActuatorAutoConfiguration.class))
 		.withUserConfiguration(UserDetailsServiceConfiguration.class);
 
 	private static final String BASE_PATH = "/cloudfoundryapplication";
